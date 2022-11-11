@@ -7,7 +7,7 @@ import java.util.PropertyResourceBundle;
 
 public class Game {
     private final String name = "Ďuránova cesta ze dobrodružstvím ";
-    private final double version = 0.1;
+    private final double version = 0.2;
     private final String author = "Karla_Kubalová";
     private GameDialog gameDialog;
     private Player player;
@@ -23,7 +23,7 @@ public class Game {
     }
 
     private void introMenu() {
-        gameDialog.say("Vitej v poklidnem mestecku. V mestecku bydli tisice lidi. Je cas na vyber tvoji postavy. ");
+        gameDialog.say("Vítejte v kůži Tomáše Ďurána, který chodí na Střední průmyslovou školu do Mladé Boleslavi, kde se ztratila Kája společně s virtuální realitou. ");
         gameDialog.say("Zvol si svoji rasu:", "white");
         for (Race value : Race.values()) {
             gameDialog.say(value.toString(), "purple");
